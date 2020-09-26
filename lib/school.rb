@@ -15,6 +15,11 @@ class School
       @roster[grade] = [student_name]
       # @roster[grade] << student_name
     end
+      # @roster[grade] ||=[]
+  end
+
+  def grade(grade_level)
+    @roster[grade_level]
   end
 
 end
